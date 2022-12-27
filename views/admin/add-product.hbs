@@ -1,0 +1,78 @@
+<style>
+    
+    section{
+        background-color:#6d6875;
+        width: 100% ;
+        height: 800px;
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
+      
+      
+    }
+    .input-direction{
+          width: 50%;
+        height: 700px;
+        
+        box-sizing: border-box;
+      
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        
+      
+    
+
+        
+    }
+    .input-section{
+        margin-right: 30px;
+        margin-top: 50px;
+        padding-top: 30px;
+        width: 300px;
+        border-radius: 10px;
+        border-style:inherit;
+        padding: 10px;
+
+    } 
+    .right-section{
+        background-color: #6d6875;
+        width: 50%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-section h2{
+        font-family: Unbounded;
+        color: white;
+    }
+</style>
+
+<section>
+    <div class="right-section">
+      <h1>PRODUCT CATEGORY PAGES</h1>       
+    </div>
+   <form action="/admin/add-product" method="post" enctype="multipart/form-data" class="dirction">
+   <div class="input-direction">
+
+                <input type="text" name="name"  class="input-section" placeholder="name">
+              
+                <input type="text" name="category"   class="input-section" placeholder="category">
+              
+                <input type="text" name="price"   class="input-section" placeholder="price">
+         
+                <input type="text" name="description"class="input-section" placeholder="description">
+            
+                <input type="file" accept=".jpg" name="datas"  class="input-section" placeholder="images">
+                
+                <button type="submit" >submit</button class="input-section">
+   </div>
+            
+            </form>
+</section>
+
+
+
+
